@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task A</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+<h1>Form validation HTML5</h1>
+
+<form method="post">
+    <!-- your input elements here -->
+    <div class="validform">
+        Firstname*:<br>
+        <input type="text" name="firstname" required placeholder="First name.."><br>
+        Lastname*:<br>
+        <input type="text" name="lastname" required placeholder="Last name.."><br>
+        Email*: <br><input type="email" name="email" required placeholder="Enter a valid email address"><br>
+        Phone number:<br>
+        <input type="tel" name="phonenumber" pattern="\+358[0-9]{9}" placeholder="+358123456789"><br>
+        Address:<br>
+        <input type="text" name="address"><br>
+        Postal code:<br>
+        <input type="number" name="postalcode" pattern="[0-9]{5}" placeholder="00000"><br>
+        Password*:<br>
+        <input type="password" name="password" pattern=".{6,}" placeholder="Six or more characters" required><br>
+        <input type="submit" value="Submit">
+    </div>
+
+</form>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>
