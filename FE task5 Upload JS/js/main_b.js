@@ -18,12 +18,12 @@ const upload = (evt) => {
 // make an object for settings
     const settings = {
         method: 'POST',
-        // credentials: 'same-origin', // this might be needed for some servers
+        credentials: 'same-origin', // this might be needed for some servers
         body: data
     };
 // initiate fetch. In this example the server responds with text.
 // Response could also be json. Then you would use response.json()
-    fetch('http://10.114.34.20:8080/appName/servlet', settings).then((response) => {
+    fetch('http://10.114.34.20:8080/FileUploadNEW/do', settings).then((response) => {  //CHECK THE ADDRESS
         return response.json();
     }).then((json) => {
        // - when file upload is complete, writes server response to 'message' element
